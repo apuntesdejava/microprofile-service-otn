@@ -1,0 +1,4 @@
+create-jdbc-connection-pool --pooling=true --restype=javax.sql.ConnectionPoolDataSource --datasourceclassname=com.mysql.cj.jdbc.MysqlConnectionPoolDataSource --property password=employees:user=employees:serverName=localhost:databaseName=employees:useSSL=false:requireSSL=true:serverTimezone=America/Lima microprofilePool
+
+create-jdbc-resource --connectionpoolid microprofilePool jdbc/employees
+
